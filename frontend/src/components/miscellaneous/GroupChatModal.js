@@ -17,9 +17,6 @@ import axios from "axios";
 import { useState } from "react";
 import { ChatState } from "../../context/chatProvider";
 import UserBadgeItem from "../UserAvatar/UserBadgeItem";
-
-
-
 import UserListItem from "../UserAvatar/UserListItem";
 
 
@@ -178,7 +175,6 @@ const GroupChatModal = ({ children }) => {
                 .map((user) => (
                   <UserListItem
                     key={user._id}
-                    user={user}
                     handleFunction={() => handleGroup(user)}
                   />
                 ))
